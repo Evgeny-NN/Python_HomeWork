@@ -34,10 +34,10 @@ if num < 100000 or num > 999999:
 else:
     sum1 = (num // 1000 % 10) + (num // 10000 % 10) + (num // 100000 % 10)
     sum2 = (num % 10) + (num % 100 // 10) + (num % 1000 // 100)
-if sum1 == sum2:
-    print(f"{num} happy number!")
-else:
-    print(f"{num} not happy number!")
+    if sum1 == sum2:
+        print(f"{num} happy number!")
+    else:
+        print(f"{num} not happy number!")
 
 """
 # Задача 8: Требуется определить, можно ли от шоколадки размером n × m долек отломить k долек, если разрешается
